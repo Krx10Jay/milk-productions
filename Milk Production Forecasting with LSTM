@@ -1,0 +1,10 @@
+This is a Streamlit web app that forecasts monthly milk production using an LSTM (Long Short-Term Memory) neural network. It allows users to upload milk production data, train an LSTM model, evaluate performance, and forecast future production.
+Features
+- Upload CSV data (`Date`, `Production` columns)
+- Interactive dashboard with:
+  - Region-specific unit formatting (₦/Litre, $/Gallon, €/Litre)
+  - Configurable LSTM settings
+  - Model training and loading options
+  - Forecast visualization with confidence in results
+  - MAE and RMSE error metrics
+  - Downloadable CSV results
