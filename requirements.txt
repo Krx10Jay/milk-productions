@@ -2,8 +2,8 @@ streamlit==1.35.0
 pandas==2.2.1
 numpy==1.26.4
 matplotlib==3.8.4
-scikit-learn
-tensorflow
+scikit-learn==1.2.0
+tensorflow-cpu==2.11.0
 joblib==1.4.2
 h5py==3.11.0
 scipy==1.13.1
