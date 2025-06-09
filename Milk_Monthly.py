@@ -10,6 +10,8 @@ from tensorflow.keras.preprocessing.sequence import TimeseriesGenerator
 from tensorflow.keras.models import Sequential, load_model
 from tensorflow.keras.layers import LSTM, Dense, Dropout
 from tensorflow.keras.optimizers import Adam
+import os
+os.makedirs("models", exist_ok=True)
 
 # Streamlit page configuration
 st.set_page_config(page_title="Milk Forecast Dashboard", layout="wide")
@@ -40,9 +42,11 @@ if uploaded_file:
     data = df['Production'].values.reshape(-1, 1)
 
     # Define model and scaler paths
-    scaler_path = "models/scaler.save"
-    model_path = "models/milk_lstm_model.h5"
-    os.makedirs("models", exist_ok=True)
+    model_path = "models/milk1_lstm_model.h5"
+    scaler_path = "models/scaler.save1"
+    # scaler_path = "models/scaler.save"
+    # model_path = "models/milk_lstm_model.h5"
+    # os.makedirs("models", exist_ok=True)
 
     # Load or create scaler
     if os.path.exists(scaler_path):
